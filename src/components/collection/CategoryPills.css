@@ -1,0 +1,74 @@
+.category-pills-wrapper {
+  margin-top: 24px; /* 24px break between Hero and Subcategory buttons */
+  margin-bottom: 18px; /* 18px break between Subcategory buttons and Filter bar */
+}
+
+.pills-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding: 4px 2px 6px 2px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.pills-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.pill-btn {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #171717;
+  background-color: #FFFFFF;
+  border: 1px solid #D8D0BF;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.pill-btn:hover {
+  border-color: #B8954A;
+  color: #8E6E32;
+  background-color: #FAF6ED;
+}
+
+.pill-active {
+  background-color: #B8954A;
+  border-color: #B8954A;
+  color: #FFFFFF !important;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(184, 149, 74, 0.3);
+}
+
+.pill-active .pill-gujarati {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.pill-gujarati {
+  font-size: 0.8rem;
+  color: #66605A;
+}
+
+@media (max-width: 1024px) {
+  .category-pills-wrapper {
+    margin-top: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .category-pills-wrapper {
+    margin-top: 16px;
+    margin-bottom: 14px;
+  }
+}

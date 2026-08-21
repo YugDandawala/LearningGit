@@ -1,0 +1,88 @@
+/* =============================================
+   KHUSHBU GOLD PALACE — Design Tokens
+   ============================================= */
+
+:root {
+  /* Brand Colors */
+  --color-primary-gold: #C5A059;
+  --color-secondary-gold: #D4AF37;
+  --color-dark-gold: #B8860B;
+  --color-cream: #E3D7C1; /* Richer warm luxury cream */
+  --color-header-bg: #EDE2CD; /* Richer top header background */
+  --color-white: #FFFFFF;
+  --color-black: #181818;
+  --color-text: #222222;
+  --color-muted: #555555;
+  --color-pattern: #D9C89F;
+  --color-border: #D9CBB0;
+  --color-whatsapp: #25D366;
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', 'Noto Serif Gujarati', Georgia, serif;
+  --font-body: 'Inter', 'Noto Sans Gujarati', system-ui, -apple-system, sans-serif;
+  --font-gujarati: 'Noto Serif Gujarati', 'Noto Sans Gujarati', serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-padding: 1.5rem;
+  --header-height: 110px;
+  --nav-height: 48px;
+  --ticker-height: 32px;
+
+  /* Borders */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  /* Transitions */
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-fast: 200ms var(--ease-premium);
+  --transition-base: 300ms var(--ease-premium);
+  --transition-slow: 500ms var(--ease-premium);
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 1.25rem;
+    --header-height: 90px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --container-padding: 1rem;
+    --header-height: 75px;
+    --text-5xl: 2.25rem;
+    --text-4xl: 1.875rem;
+    --text-3xl: 1.5rem;
+  }
+}

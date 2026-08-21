@@ -1,0 +1,32 @@
+.load-more-container {
+  text-align: center;
+  margin-top: 36px; /* 36px gap from product grid */
+  margin-bottom: 0; /* Bottom spacing before footer is provided by .collection-page padding-bottom */
+}
+
+.showing-count-text,
+.all-loaded-text {
+  font-size: 0.88rem;
+  color: #66605A;
+  margin-bottom: 0.85rem;
+}
+
+.load-more-btn {
+  padding: 0.85rem 2.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #171717;
+  background-color: #EFE3C4;
+  border: 1px solid #B8954A;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 6px rgba(184, 149, 74, 0.12);
+}
+
+.load-more-btn:hover {
+  background-color: #B8954A;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(184, 149, 74, 0.25);
+}

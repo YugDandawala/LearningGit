@@ -1,0 +1,28 @@
+.jali-banner-wrapper {
+  width: 100%;
+  background-color: var(--color-header-bg);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jali-banner-svg {
+  width: 100%;
+  height: 76px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .jali-banner-svg {
+    height: 56px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jali-banner-svg {
+    height: 44px;
+  }
+}

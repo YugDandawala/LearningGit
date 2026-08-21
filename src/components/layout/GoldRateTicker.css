@@ -1,0 +1,79 @@
+.gold-rate-ticker {
+  background-color: var(--color-black);
+  height: var(--ticker-height);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+.ticker-track {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.gold-rate-ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-content {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-right: 3rem;
+}
+
+.ticker-label {
+  color: var(--color-primary-gold);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 1rem;
+  letter-spacing: 0.02em;
+}
+
+.ticker-item {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.ticker-item strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.ticker-divider {
+  color: rgba(255, 255, 255, 0.25);
+  margin: 0 1rem;
+  font-size: 0.7rem;
+}
+
+.rate-up {
+  color: #4ade80;
+  font-size: 0.65rem;
+}
+
+.rate-down {
+  color: #f87171;
+  font-size: 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .gold-rate-ticker {
+    height: 30px;
+  }
+
+  .ticker-label,
+  .ticker-item {
+    font-size: 0.7rem;
+  }
+
+  .ticker-divider {
+    margin: 0 0.6rem;
+  }
+}

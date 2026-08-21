@@ -1,0 +1,33 @@
+.brand-story-section {
+  padding: var(--space-3xl) 0 var(--space-4xl);
+  background-color: var(--color-white);
+}
+
+.brand-story-content {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.brand-story-content p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.8;
+  color: var(--color-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.brand-story-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .brand-story-section {
+    padding: var(--space-2xl) 0 var(--space-3xl);
+  }
+
+  .brand-story-content p {
+    font-size: var(--text-sm);
+    line-height: 1.7;
+  }
+}

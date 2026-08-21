@@ -1,0 +1,27 @@
+.collection-page-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-cream);
+}
+
+.collection-page {
+  flex: 1;
+  padding-top: 28px; /* Clear breathing space between Navigation bar and Collection Hero */
+  padding-bottom: 76px; /* Generous breathing space between Products/LoadMore and Footer */
+}
+
+@media (max-width: 1024px) {
+  .collection-page {
+    padding-top: 24px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .collection-page {
+    padding-top: 20px;
+    padding-bottom: 48px;
+  }
+}
+
