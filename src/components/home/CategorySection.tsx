@@ -9,7 +9,7 @@ const CategorySection: React.FC = () => {
     <section className="category-section" aria-labelledby="category-heading">
       <div className="container">
         <SectionHeading>
-          <span id="category-heading">Discover By Category</span>
+          <span id="category-heading">Discover By OM</span>
         </SectionHeading>
         <div className="category-grid">
           {categories.map((category) => (
